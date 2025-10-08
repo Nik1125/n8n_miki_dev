@@ -1,10 +1,7 @@
-ARG N8N_VERSION=1.114.4
-FROM n8nio/n8n:${N8N_VERSION}
+FROM n8nio/n8n:1.114.4
 
 USER root
-RUN apt-get update \
- && apt-get install -y --no-install-recommends ffmpeg \
- && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache ffmpeg
 
 USER node
 CMD ["n8n", "start"]
