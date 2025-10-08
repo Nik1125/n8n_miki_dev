@@ -1,3 +1,10 @@
+# n8n + ffmpeg for Railway
+
+This repository contains a custom **Dockerfile** to run **n8n** on [Railway](https://railway.app/) with **ffmpeg** pre-installed.
+It supports both **Primary** (main web UI) and **Worker** (queue execution) services.
+
+---
+
 ## 🚀 Deploy to Railway
 
 1. Fork or clone this repository.
